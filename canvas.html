@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>碰撞球</title>
+  <style>
+     body{
+ 	    margin:0;
+        background-color:#000;		
+ 	 }
+     .bubble{
+	     width:500px;
+		 height:500px;
+		 margin:0 auto;
+		 display:flex;
+		 background-color:#000;
+		 justify-content:space-around;
+		 align-items:center;
+		 filter:blur(10px) contrast(10);
+	 }
+	 .circle{
+	     width:96px;
+		 height:96px;
+		 border-radius:50%;
+		 background-color:#fff;
+	 }
+	 .circle:nth-child(2){
+         animation:changPs 2s infinite alternate;
+	 }
+	 @keyframes changPs{
+	    from{
+		    box-shadow:350px 0px 0px #fff;
+		}
+		to{
+		    box-shadow:-350px 0px 0px #fff;
+		}
+	 }
+  </style>
+ </head>
+ <body>
+	<div class="bubble">
+	  <div class="circle"></div>
+	  <div class="circle"></div>
+	  <div class="circle"></div>
+	</div>
+ </body>
+</html>
